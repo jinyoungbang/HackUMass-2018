@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>College Website Helper</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>College Website Helper</h1>
+        </header>
+
+
+
+        <main>
+            <div class="nav">
+                <a href="./home.html">Home</a>
+                <a href="./page1.html">page1</a>
+                <a href="./page2.html">page2</a>
+                <a href="./page3.html">page3</a>
+            </div>
+
+            <section id="Home">
+                    <div class="a">
+                        <h1>HOMEPAGE</h1>
+                    </div>
+                </section>
+
+            </section>
+            <section id="JavaScript Test">
+                <div class="a">
+                    <p id = "ctext">woohoo this should change</p>
+                    <button type="button" onclick="document.getElementById('ctext').innerHTML = 'BOOM'">Change the text!</button>
+                    <p id = "sumn3"></p>
+                    <p id = "otherline">The number is: 11</p>
+                    <script>
+                        var n1 = 5;
+                        var n2 = 6;
+                        var n3 = n1 + n2;
+                        var text = "The number is: "
+                        document.getElementById("sumn3").innerHTML = text + n3;
+                    </script>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Created by Alex, Alina and Nathan
+        </footer>
+    </body>
+
+</html>

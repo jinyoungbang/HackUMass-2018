@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    margin-top: 0px;
+
+    background-image: url("https://i.ytimg.com/vi/PLAJTuLNI7A/maxresdefault.jpg") center;
+    opacity: 1;
+
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    background:
+    url(sunrisephoto.jpg) no-repeat center;
+    height: 250px;
+    color: white;
+
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 200%;
+    height: auto;
+    position: center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform;
+    translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #77dd77;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32 px;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.nav a{
+    float: left;
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 15px 80px;
+}
+
+.nav a:hover {
+    background-color: rgb(106, 190, 223);
+}
+
+.nav a.active {
+    background-color: #4caf50;
+    color: #aec6cf;
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    border-width: 5px;
+}
+
+.para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 50px 100px;
+    padding: 20px;
+}
+
+.footer {
+    background: black;
+    position: relative;
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    color: white;
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coll[A]ge</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style-bs.css" rel="stylesheet">
+</head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coll[A]ge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home-bs.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./page1-bs.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page2-bs.html">Stress Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page3-bs.html">College Tips</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page4-bs.html">Anxiety</a>
+                    </li> 
+
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!--- Image-->
+       
+        <header class="header1">
+
+        </header>
+            
+        <!--- Welcome Section -->
+
+        <div class="container-fluid padding">
+        <div class="row welcome text-center padding">
+            <div class="col-12">
+                <h1 class="display-4">Grade Calculator</h1>
+            </div>   
+            <p class="lead"> Input your score in the given function and it wil calculate your current grade and how well you need to do on your next exam in order to get your desired score!</p>
+        </div>
+        <hr class="light">
+        </div>
+        
+        <!--- Two Column Section -->
+        <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-12">
+                <h2>How to use this GPA Calculator!</h2>
+                <p>Input the relevant info into the fields below - Please input numbers greater than 0 and input percentages out of 100.</p>
+                    <hr class="light">
+            </div>   
+        </div>
+        </div>
+
+        <section id="JavaScript Test">
+            <div class="para_grade">
+
+
+                <h5>Class Name:
+                <input type="text" id="className" value=""></h5>
+                <br>
+                <h5>Exam/HW 1 Grade & Weight:
+                <input name="grayed" value=""> % & <input id="p1" name="percy" value=""> %</h5>
+                <br>
+                <h5>Exam/HW 2 Grade & Weight:
+                <input name="grayed" value=""> % & <input id="p2" name="percy" value=""> %</h5>
+                <br>
+                <h5 id="newgrades"></h5>
+                <button onclick="myFunction()">Add Another Class</button>
+                <hr class="light">
+
+                <h5>Next Assignment Weight (Optional):</h5>
+                <input id="finalex" value=""> %
+                <hr class="light">
+                
+                <button onclick="gradeCalc()">Calculate!</button>
+                
+                <p id="theClass"></p>
+                <p id="currentGrade"></p>
+                <p id="get93"></p>
+                <p id="get90"></p>
+                <p id="get87"></p>
+                <p id="get83"></p>
+                <p id="get80"></p>
+                <p id="get77"></p>
+                <p id="get73"></p>
+                <p id="get70"></p>
+                <p id="get67"></p>
+                <p id="get63"></p>
+                <p id="get60"></p>   
+    
+                <div style="display:none" id="texttoshow">
+                    <button onclick="reload()" id="reloadButton">Try another class!</button>
+                </div>
+                
+
+
+                <script type="text/javascript" src="TheGradeCalcScript.js"></script>
+
+        <!--- Fixed background -->
+        <figure>
+            <div class="fixed-wrap">
+                <div id="fixed">
+                </div>
+            </div>
+        </figure>
+        
+
+        <!--- Footer -->
+        <div class="footer">
+            <h6>&copy; Created by Coll[A]ge</h6>
+            </p>
+        </div>
+
+</body>
+</html>

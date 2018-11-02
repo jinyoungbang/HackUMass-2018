@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grade Calculator</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Take your time to relieve stress!</h1>
+        </header>
+
+
+
+        <main>
+            <div class="nav">
+                <a href="./home.html">Home</a>
+                <a href="./page1.html">Grade Calculator</a>
+                <a href="./page2.html">Stress Calculator</a>
+                <a href="./page3.html">page3</a>
+            </div>
+            
+            <section id="page1">
+                <div class="title">
+                    <h2>The Ultimate Grade Calculator</h2>
+                </div>
+                <div class="para">
+                    <p>Input your score in the given function and it wil calculate the how much percent 
+                        you need for your next exam in order to get your desired score!
+                    </p>
+                </div>
+            </section>
+
+            <section id="JavaScript Test">
+                <div class="para">
+
+
+                    <h4>Class Name:</h4>
+                    <input type="text" id="className" value="">
+                    <h4>Category 1 Grade:</h4>
+                    <input id="g1" value="">
+                    <h4>Category 2 Grade:</h4>
+                    <input id="g2" value="">
+                    <h4>Category 1 Weight:</h4>
+                    <input  id="p1" value="">
+                    <h4>Category 2 Weight:</h4>
+                    <input id="p2" value="">
+                    <h4>Final Weight (Optional):</h4>
+                    <input id="finalex" value="">
+                    <br>
+                    <br>
+                    <button onclick="gradeCalc()">Calculate!</button>
+                    <p id="theClass"></p>
+                    <p id="currentGrade"></p>
+                    <p id="get93"></p>
+                    <p id="get90"></p>
+                    <p id="get87"></p>
+                    <p id="get83"></p>
+                    <p id="get80"></p>
+
+        
+                    <div style="display:none" id="texttoshow">
+                        <button onclick="reload()" id="reloadButton">Try another class!</button>
+                    </div>
+                    
+                    <script type="text/javascript" src="TheGradeCalcScript.js"></script>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Created by Alina, Jin Young (Alex) and Nathan</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
